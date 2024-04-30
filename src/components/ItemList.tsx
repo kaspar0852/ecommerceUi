@@ -21,12 +21,13 @@ const ItemList = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-4">
+    <div className="grid grid-cols-4 p-6">
       {data?.results?.map((item: GetProduct, index: number) => {
         return (
           <>
             <List
               key={index}
+              id={item.id}
               name={item.Name}
               description={item.Description}
               productType={item.Product_Type && item.Product_Type}

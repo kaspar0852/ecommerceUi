@@ -1,5 +1,7 @@
+import DetailView from "../components/DetailView";
 import ItemList from "../components/ItemList";
-import ProductDetailView from "../components/ProductDetailView";
+import Login from "../components/LoginForm";
+import Register from "../components/RegisterFrom";
 
 export const routes = [
   {
@@ -8,8 +10,18 @@ export const routes = [
     element: ItemList,
   },
   {
-    path: "/ProductList/",
+    path: "/product/:id",
     exact: true,
-    element: ProductDetailView,
+    element: DetailView,
   },
+  {
+    path:"/login",
+    exact: true,
+    element: Login
+  },
+  {
+    path:"/register",
+    exact: true,
+    element: Register
+  }
 ];

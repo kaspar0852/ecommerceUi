@@ -6,4 +6,3 @@ export type OrderUser = {
     Name: string;
     Age: number;
 };
-

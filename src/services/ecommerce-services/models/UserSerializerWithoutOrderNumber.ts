@@ -9,4 +9,3 @@ export type UserSerializerWithoutOrderNumber = {
     Phone: number;
     IsActive?: boolean;
 };
-

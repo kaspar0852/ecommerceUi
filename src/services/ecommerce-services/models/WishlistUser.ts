@@ -6,4 +6,3 @@ export type WishlistUser = {
     Name: string;
     Age: number;
 };
-

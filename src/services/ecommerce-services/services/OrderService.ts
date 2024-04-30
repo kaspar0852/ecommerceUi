@@ -15,20 +15,20 @@ export class OrderService {
      * @param ordering Which field to use when ordering the results.
      * @param page A page number within the paginated result set.
      * @param pageSize Number of results to return per page.
-     * @returns any
+     * @returns any 
      * @throws ApiError
      */
     public static orderOrdersList(
-        search?: string,
-        ordering?: string,
-        page?: number,
-        pageSize?: number,
-    ): CancelablePromise<{
-        count: number;
-        next?: string | null;
-        previous?: string | null;
-        results: Array<GetOrderList>;
-    }> {
+search?: string,
+ordering?: string,
+page?: number,
+pageSize?: number,
+): CancelablePromise<{
+count: number;
+next?: string | null;
+previous?: string | null;
+results: Array<GetOrderList>;
+}> {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/order/orders/',
@@ -42,13 +42,13 @@ export class OrderService {
     }
 
     /**
-     * @param data
-     * @returns Order
+     * @param data 
+     * @returns Order 
      * @throws ApiError
      */
     public static orderOrdersCreate(
-        data: Order,
-    ): CancelablePromise<Order> {
+data: Order,
+): CancelablePromise<Order> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/order/orders/',
@@ -57,13 +57,13 @@ export class OrderService {
     }
 
     /**
-     * @param userId
-     * @returns GetOrderList
+     * @param userId 
+     * @returns GetOrderList 
      * @throws ApiError
      */
     public static orderUserOrdersRead(
-        userId: string,
-    ): CancelablePromise<Array<GetOrderList>> {
+userId: string,
+): CancelablePromise<Array<GetOrderList>> {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/order/user-orders/{user_id}/',
@@ -75,12 +75,12 @@ export class OrderService {
 
     /**
      * @param id A unique integer value identifying this order.
-     * @returns Order
+     * @returns Order 
      * @throws ApiError
      */
     public static orderRead(
-        id: number,
-    ): CancelablePromise<Order> {
+id: number,
+): CancelablePromise<Order> {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/order/{id}/',
@@ -92,14 +92,14 @@ export class OrderService {
 
     /**
      * @param id A unique integer value identifying this order.
-     * @param data
-     * @returns Order
+     * @param data 
+     * @returns Order 
      * @throws ApiError
      */
     public static orderUpdate(
-        id: number,
-        data: Order,
-    ): CancelablePromise<Order> {
+id: number,
+data: Order,
+): CancelablePromise<Order> {
         return __request(OpenAPI, {
             method: 'PUT',
             url: '/order/{id}/',
@@ -112,14 +112,14 @@ export class OrderService {
 
     /**
      * @param id A unique integer value identifying this order.
-     * @param data
-     * @returns Order
+     * @param data 
+     * @returns Order 
      * @throws ApiError
      */
     public static orderPartialUpdate(
-        id: number,
-        data: Order,
-    ): CancelablePromise<Order> {
+id: number,
+data: Order,
+): CancelablePromise<Order> {
         return __request(OpenAPI, {
             method: 'PATCH',
             url: '/order/{id}/',
@@ -132,12 +132,12 @@ export class OrderService {
 
     /**
      * @param id A unique integer value identifying this order.
-     * @returns void
+     * @returns void 
      * @throws ApiError
      */
     public static orderDelete(
-        id: number,
-    ): CancelablePromise<void> {
+id: number,
+): CancelablePromise<void> {
         return __request(OpenAPI, {
             method: 'DELETE',
             url: '/order/{id}/',

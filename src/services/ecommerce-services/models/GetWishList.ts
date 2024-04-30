@@ -13,4 +13,3 @@ export type GetWishList = {
     product?: WishlistProduct;
     readonly CreatedTime?: string;
 };
-

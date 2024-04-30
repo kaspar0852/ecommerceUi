@@ -7,8 +7,7 @@ export type ProductCreate = {
     Name: string;
     Description: string;
     Expiration_Date: string;
-    UserId: number;
     ProductTypeId: number;
+    Price?: string | null;
     readonly image?: string;
 };
-

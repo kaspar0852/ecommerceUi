@@ -3,7 +3,7 @@
 /* eslint-disable */
 
 export type ProductProductType = {
-  readonly id?: number;
-  Name: string;
-  Description?: string | null;
+    readonly id?: number;
+    Name: string;
+    Description?: string | null;
 };

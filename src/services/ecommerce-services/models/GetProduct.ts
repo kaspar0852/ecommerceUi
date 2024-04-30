@@ -10,8 +10,7 @@ export type GetProduct = {
     Name: string;
     Description: string;
     Expiration_Date: string;
-    UserId: number;
     Product_Type?: ProductProductType;
+    Price?: string | null;
     readonly Product_Image?: Array<ProductImage>;
 };
-
