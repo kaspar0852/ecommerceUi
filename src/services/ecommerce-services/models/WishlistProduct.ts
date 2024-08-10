@@ -5,3 +5,4 @@
 export type WishlistProduct = {
     Name: string;
 };
+

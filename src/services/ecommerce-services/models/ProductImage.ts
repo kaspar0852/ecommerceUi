@@ -9,3 +9,4 @@ export type ProductImage = {
     Extension: string;
     ProductId: number;
 };
+

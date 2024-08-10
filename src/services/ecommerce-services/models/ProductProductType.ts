@@ -7,3 +7,4 @@ export type ProductProductType = {
     Name: string;
     Description?: string | null;
 };
+

@@ -17,3 +17,4 @@ export type GetOrderList = {
     user?: OrderUser;
     product?: OrderProduct;
 };
+

@@ -14,3 +14,4 @@ export type GetProduct = {
     Price?: string | null;
     readonly Product_Image?: Array<ProductImage>;
 };
+

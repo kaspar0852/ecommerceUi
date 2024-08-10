@@ -10,3 +10,4 @@ export type ProductReview = {
     ProductId: number;
     UserId: number;
 };
+

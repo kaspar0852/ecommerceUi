@@ -11,3 +11,4 @@ export type ProductCreate = {
     Price?: string | null;
     readonly image?: string;
 };
+

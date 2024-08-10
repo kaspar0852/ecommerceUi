@@ -8,3 +8,4 @@ export type Wishlist = {
     ProductId: number;
     readonly CreatedTime?: string;
 };
+

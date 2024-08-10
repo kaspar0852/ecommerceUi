@@ -2,8 +2,9 @@
 /* tslint:disable */
 /* eslint-disable */
 
-export type TokenObtainPair = {
+export type MyTokenObtainResponse = {
+    access_token: string;
+    refresh_token: string;
     username: string;
-    password: string;
 };
 

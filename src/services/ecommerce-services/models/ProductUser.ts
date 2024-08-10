@@ -7,3 +7,4 @@ export type ProductUser = {
     Age: number;
     Address: string;
 };
+
